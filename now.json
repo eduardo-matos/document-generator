@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "document-generator",
+  "builds": [
+    { "src": "cpf/**/*.js", "use": "@now/node" },
+    { "src": "cnpj/**/*.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "cpf/index.js" }
+  ]
+}
