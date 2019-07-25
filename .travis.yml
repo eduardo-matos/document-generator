@@ -1,7 +1,8 @@
 language: node_js
 node_js:
   - '8'
-script: npm run export
+before_install:
+  - npm i -g now
 deploy:
   provider: script
   script: npm run deploy
